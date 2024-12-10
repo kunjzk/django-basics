@@ -24,4 +24,5 @@ urlpatterns = [
     path('contact/', views.contact, name="contact"),
     path('chai/', include('chai.urls')), # if a request hits chai/, move control to the chai.urls file in the chai app
 
+    path("__reload__", include("django_browser_reload.urls")),
 ]
